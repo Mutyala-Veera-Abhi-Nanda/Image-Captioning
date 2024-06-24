@@ -14,5 +14,10 @@ To run this project, you'll need the following libraries:
 - tqdm
 - matplotlib
 - seaborn
+
+You can install these libraries using pip:
+
+pip install numpy pandas tensorflow tqdm matplotlib seaborn
+
 ###### Heading 3
 Hi hello
