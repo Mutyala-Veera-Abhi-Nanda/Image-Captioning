@@ -19,5 +19,28 @@ You can install these libraries using pip:
 
 pip install numpy pandas tensorflow tqdm matplotlib seaborn
 
-###### Heading 3
-Hi hello
+## Usage
+#### 1. Clone the Repository
+code:
+git clone https://github.com/yourusername/Image-Captioning.git
+cd Image-Captioning
+#### 2. Prepare the Data
+Ensure the COCO dataset is downloaded and placed in the appropriate directory. You can modify the data paths in the notebook as needed.
+
+#### 3. Run the Notebook
+Open the Jupyter notebook and run the cells sequentially to train the model and generate image captions.
+
+## Key Sections in the Notebook
+#### Data Preparation:
+- Loading the dataset
+- Preprocessing images and captions
+#### Model Building:
+- Defining the CNN-RNN model architecture
+#### Training:
+- Training the model with the COCO dataset
+#### Evaluation:
+- Generating captions for new images
+
+## Results:
+
+After training the model, you can evaluate its performance by generating captions for new images. The model's performance can be visualized using various evaluation metrics and plots.
