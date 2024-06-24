@@ -50,3 +50,5 @@ After training the model, you can evaluate its performance by generating caption
 Here's an example of a generated caption:
 
 ![Screenshot (488)](https://github.com/Mutyala-Veera-Abhi-Nanda/Image-Captioning/assets/164295902/56a6efcc-4bdf-4f21-936b-1ba6e4397985)
+
+Caption: "Man is playing tennis on the court."
