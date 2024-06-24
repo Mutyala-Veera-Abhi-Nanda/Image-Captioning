@@ -4,7 +4,15 @@ This repository contains a project for generating captions for images using deep
 
 ## Dataset
 The dataset used in this project is the COCO (Common Objects in Context) dataset, which includes images and their corresponding captions.
-#### Heading 2
-Hi hello
+## Requirements
+To run this project, you'll need the following libraries:
+
+- Python 3.x
+- numpy
+- pandas
+- tensorflow
+- tqdm
+- matplotlib
+- seaborn
 ###### Heading 3
 Hi hello
