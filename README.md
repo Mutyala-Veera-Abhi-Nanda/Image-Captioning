@@ -1,13 +1,12 @@
 # Image Captioning Project
 
-This repository contains a project for generating captions for images using deep learning models. The project involves preprocessing image data, training a model, and generating captions for new images.
+This project is for generating captions for images using VGG-16 and LSTM. The project involves preprocessing image data, training a model, and generating captions for new images.
 
 ## Dataset
 The dataset used in this project is the COCO (Common Objects in Context) dataset, which includes images and their corresponding captions.
 ## Requirements
-To run this project, you'll need the following libraries:
 
-- Python 3.x
+- Python
 - numpy
 - pandas
 - tensorflow
@@ -15,29 +14,38 @@ To run this project, you'll need the following libraries:
 - matplotlib
 - seaborn
 
-You can install these libraries using pip:
-
-pip install numpy pandas tensorflow tqdm matplotlib seaborn
-
-## Usage
-#### 1. Clone the Repository
-code:
-git clone https://github.com/yourusername/Image-Captioning.git
-cd Image-Captioning
-#### 2. Prepare the Data
-Ensure the COCO dataset is downloaded and placed in the appropriate directory. You can modify the data paths in the notebook as needed.
-
-#### 3. Run the Notebook
-Open the Jupyter notebook and run the cells sequentially to train the model and generate image captions.
-
 ## Key Sections in the Notebook
-#### Data Preparation:
-- Loading the dataset
-- Preprocessing images and captions
-#### Model Building:
-- Defining the CNN-RNN model architecture
-#### Training:
-- Training the model with the COCO dataset
+
+#### Importing Dependencies
+
+- Lists the necessary libraries and dependencies for the project, including standard Python libraries and specific packages like TensorFlow, Keras, and Pandas.
+
+#### Dataset Exploration
+
+- Dataset Source: The dataset used is from the COCO (Common Objects in Context) dataset.
+
+- Dataset Details: Contains 82,783 image files.
+
+- Data Organization: Images are stored in directories, and captions are loaded into a Pandas DataFrame containing image_id, image_path, and caption.
+
+#### Data Preprocessing
+
+###### Image Processing:
+
+- Converts images to RGB format.
+
+- Converts images into 1D vectors and normalizes them.
+
+###### Text Processing:
+
+- Converts captions to lowercase.
+
+- Removes non-alphabetic characters and extra whitespace.
+
+- Removes single characters from captions.
+
+- Adds special tokens ("startseq" and "endseq") to each caption.
+
 #### Evaluation:
 - Generating captions for new images
 
